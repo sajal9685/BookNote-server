@@ -1,3 +1,4 @@
+
 # 📚 BookNote – Personal Notes & Bookmark Manager (Backend)
 
 BookNote is a RESTful backend service built with **Node.js**, **Express**, and **MongoDB**, allowing users to securely manage personal **notes** and **bookmarks** with tagging, search, and favorites functionality.
@@ -27,17 +28,21 @@ BookNote is a RESTful backend service built with **Node.js**, **Express**, and *
 
 ## 📁 Folder Structure
 
+```
+
 booknote/
-├── controllers/ # Auth, notes, bookmarks logic
-├── models/ # Mongoose schemas
-├── routes/ # Route definitions
-├── middlewares/ # Authentication and rate-limiter
-├── utils/ # Validators and metadata scrapers
-├── config/ # Database connection (optional)
-├── .env # Environment variables
+├── controllers/         # Auth, notes, bookmarks logic
+├── models/              # Mongoose schemas
+├── routes/              # Route definitions
+├── middlewares/         # Authentication and rate-limiter
+├── utils/               # Validators and metadata scrapers
+├── config/              # Database connection (optional)
+├── .env                 # Environment variables
 ├── .gitignore
 ├── server.js
 └── README.md
+
+````
 
 ---
 
@@ -48,31 +53,57 @@ booknote/
 ```bash
 git clone https://github.com/your-username/booknote.git
 cd booknote
+````
+
 ### 2. Install dependencies
+
 ```bash
 npm install
-### 3. Create .env file
+```
+
+### 3. Create `.env` file
+
 ```bash
 touch .env
-Add this to your .env:
-```bash
+```
+
+Add this to your `.env`:
+
+```env
 PORT=5000
 MONGODB_URI=mongodb://localhost:27017/notes-bookmarks
 JWT_SECRET=your-secure-secret
+```
+
+> ⚠️ Replace `your-secure-secret` with a strong random string
+
 ### 4. Start the development server
+
 ```bash
 npm run dev   # If using nodemon
 # or
 node server.js
-The API will be running at http://localhost:5000
-🔐 API Endpoints
+```
+
+The API will be running at `http://localhost:5000`
+
+---
+
+## 🔐 API Endpoints
+
+### ✅ Auth
+
 | Method | Route                | Description       |
 | ------ | -------------------- | ----------------- |
 | POST   | `/api/auth/register` | Register new user |
 | POST   | `/api/auth/login`    | Login + get token |
 
-📝 Notes API
-All notes routes require Bearer Token
+---
+
+### 📝 Notes API
+
+> All notes routes require Bearer Token
+
 | Method | Route            | Description                             |
 | ------ | ---------------- | --------------------------------------- |
 | POST   | `/api/notes`     | Create a note                           |
@@ -81,8 +112,12 @@ All notes routes require Bearer Token
 | PUT    | `/api/notes/:id` | Update a note                           |
 | DELETE | `/api/notes/:id` | Delete a note                           |
 
-🔖 Bookmarks API
-All bookmarks routes require Bearer Token
+---
+
+### 🔖 Bookmarks API
+
+> All bookmarks routes require Bearer Token
+
 | Method | Route                | Description                              |
 | ------ | -------------------- | ---------------------------------------- |
 | POST   | `/api/bookmarks`     | Create bookmark (auto-fetch title)       |
@@ -91,10 +126,23 @@ All bookmarks routes require Bearer Token
 | PUT    | `/api/bookmarks/:id` | Update bookmark                          |
 | DELETE | `/api/bookmarks/:id` | Delete bookmark                          |
 
-🔁 Health Check
+---
+
+### 🔁 Health Check
+
 | Method | Route     | Description         |
 | ------ | --------- | ------------------- |
 | GET    | `/health` | Server health check |
-🧑‍💻 Author
-Sajal Chaturvedi
-📧 chaturvedisajal51@amail.com
+
+---
+
+
+
+## 🧑‍💻 Author
+
+**Sajal Chaturvedi**
+📧 [chaturvedisajal51@amail.com](mailto:chaturvedisajal51@amail.com)
+🔗 [GitHub](https://github.com/your-username) | [LinkedIn](https://linkedin.com/in/your-link)
+
+---
+
