@@ -141,8 +141,8 @@ The API will be running at `http://localhost:5000`
 ## 🧑‍💻 Author
 
 **Sajal Chaturvedi**
-📧 [chaturvedisajal51@amail.com](mailto:chaturvedisajal51@amail.com)
-🔗 [GitHub](https://github.com/your-username) | [LinkedIn](https://linkedin.com/in/your-link)
+📧 [chaturvedisajal51@gmail.com](mailto:chaturvedisajal51@gmail.com)
+
 
 ---
 
